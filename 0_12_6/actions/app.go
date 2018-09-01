@@ -9,7 +9,7 @@ import (
 
 	"github.com/gobuffalo/buffalo/middleware/csrf"
 	"github.com/gobuffalo/buffalo/middleware/i18n"
-	"github.com/gobuffalo/oldapp/models"
+	"github.com/gobuffalo/oldapp/0_12_6/models"
 	"github.com/gobuffalo/packr"
 )
 

@@ -2,8 +2,8 @@
 # https://docs.docker.com/engine/userguide/eng-image/multistage-build/
 FROM gobuffalo/buffalo:v0.12.6 as builder
 
-RUN mkdir -p $GOPATH/src/github.com/gobuffalo/oldapp
-WORKDIR $GOPATH/src/github.com/gobuffalo/oldapp
+RUN mkdir -p $GOPATH/src/github.com/gobuffalo/oldapp/0_12_6
+WORKDIR $GOPATH/src/github.com/gobuffalo/oldapp/0_12_6
 
 ADD . .
 RUN go get $(go list ./... | grep -v /vendor/)

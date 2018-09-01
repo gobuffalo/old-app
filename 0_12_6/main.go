@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/gobuffalo/oldapp/actions"
+	"github.com/gobuffalo/oldapp/0_12_6/actions"
 )
 
 // main is the starting point to your Buffalo application.
