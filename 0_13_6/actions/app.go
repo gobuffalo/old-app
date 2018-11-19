@@ -7,10 +7,10 @@ import (
 	paramlogger "github.com/gobuffalo/mw-paramlogger"
 	"github.com/unrolled/secure"
 
-	"github.com/gobuffalo/0_13_6/models"
 	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	csrf "github.com/gobuffalo/mw-csrf"
 	i18n "github.com/gobuffalo/mw-i18n"
+	"github.com/gobuffalo/oldapp/0_13_6/models"
 	"github.com/gobuffalo/packr"
 )
 
@@ -37,7 +37,7 @@ func App() *buffalo.App {
 	if app == nil {
 		app = buffalo.New(buffalo.Options{
 			Env:         ENV,
-			SessionName: "_0_13_6_session",
+			SessionName: "_oldapp/0_13_6_session",
 		})
 
 		// Automatically redirect to SSL
