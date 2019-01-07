@@ -12,3 +12,4 @@ oldapp
 .vscode/
 .grifter/
 .env
+go.*
